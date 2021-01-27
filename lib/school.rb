@@ -25,6 +25,7 @@ class School
 	end
 
 	def grade(grade)
+<<<<<<< HEAD
 		ROSTER[grade].uniq!
 	end
 
@@ -33,5 +34,15 @@ class School
 		  name.sort!
 		  ROSTER
     end
+=======
+		ROSTER[grade]
+	end
+
+	def sort
+		ROSTER.each do |grade|
+			grade.sort
+			puts ROSTER
+		end
+>>>>>>> 521dfa418aae80a3eb47c23ad3b57fe77b470008
 	end
 end
